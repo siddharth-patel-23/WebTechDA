@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script type="text/javascript" src="semantic.min.js"></script>
+</head>
+<body>
+<h1>
+	The Great
+	<br>
+	<span id="colorDisplay">RGB</span>
+	<br>
+	Color Game
+</h1>
+
+<div id="strip">
+	<button id = "newColors">NEW COLORS</button>
+	<span id="message"></span>
+	<button id="easy">EASY</button>
+	<button id="hard" class="selected">HARD</button>
+</div>
+
+
+<div id="container">
+	<div class="square es"></div>
+	<div class="square es"></div>
+	<div class="square es"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</div>
+<br>
+<div id="ang" ng-app="">
+	<p class="ui input focus"><input id="inp" type="text" placeholder="How's the Web App" ng-model="com"></p>
+	<p ng-bind="com"></p>
+</div>
+
+<script type="text/javascript" src="colorGame.js"></script>
+
+</body>
+</html>
